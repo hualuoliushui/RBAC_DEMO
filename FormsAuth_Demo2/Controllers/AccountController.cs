@@ -29,7 +29,6 @@ namespace FormsAuth_Demo2.Controllers
         [HttpPost]
         public ActionResult Login(FormCollection form)
         {
-
             string userName = form["userName"];
             string password = form["password"];
             if (!Forms.Verigy(userName, password))
