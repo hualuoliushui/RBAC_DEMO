@@ -1,0 +1,18 @@
+﻿@model 
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<fieldset>
+    <legend>
+        登录界面
+    </legend>
+    <form method="post" action="/Account/Login">
+        <label>用户名</label>
+        <input type="text" name="userName" /><br />
+        <label>密码</label>
+        <input type="password" name="password" /><br />
+        <input type="submit" value="登录" />
+    </form>
+</fieldset>

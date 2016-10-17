@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin:@ViewData["userName"]</h2>
+
+<a href="/Admin/AdminList" >管理员列表</a>
+
+@Html.ActionLink("管理员信息", "Admin", new { userName = ViewData["userName"] })
+@ViewData["userName"]
