@@ -25,7 +25,7 @@ namespace FormsAuth_Demo2.App_Start
                 filterContext.Result = new RedirectToRouteResult(
                     new System.Web.Routing.RouteValueDictionary{
                         {"action","Index"},
-                        {"controller","Unauthorised"}
+                        {"controller","Account"}
                     });
             }
             base.OnAuthorization(filterContext);
